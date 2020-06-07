@@ -17,7 +17,7 @@ def run():
         current_entry = FoodTruckInfo(locationId=int(row[0]),
                                         name=row[1],
                                         address=row[5],
-                                        foodItems=row[11],
+                                        foodItems=row[11].replace(":", ","),
                                         latitude=float(row[14]),
                                         longitude=float(row[15]))
         print(current_entry)

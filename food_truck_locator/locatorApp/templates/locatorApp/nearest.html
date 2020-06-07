@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h2 {
+                background-color: lightblue;
+            }
+
+            div {
+                background-color: cornsilk;
+                margin: 20px; 
+            }
+        </style>
+        <title>
+            SF Food Truck Locator
+        </title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <h1>
+            Nearest Food Trucks (sorted by distance)
+        </h1>
+        <div>
+        {% for food_truck in food_trucks %}
+            <h2>
+                {{ food_truck }}
+            </h2>
+            <p>
+                <b>Menu:</b> {{ food_truck.foodItems}}
+            </p>
+        {% endfor %}
+        </div>
+        <a href="{% url 'index' %}"> Return to index page </a>
+    </body>
+</html>
