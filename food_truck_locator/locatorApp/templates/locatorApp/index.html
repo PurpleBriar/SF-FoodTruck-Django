@@ -73,6 +73,10 @@
                         <li>
                             {{ food_truck }}
                         </li>
+                    {% empty %}
+                        <li>
+                            No food trucks returned by query.
+                        </li>
                     {% endfor %}
                 </ul>
             </div>

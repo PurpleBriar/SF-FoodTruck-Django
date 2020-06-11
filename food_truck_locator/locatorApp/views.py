@@ -29,6 +29,9 @@ def compute_nearest(latitude, longitude, n):
     truck_mapping = {}
     all_trucks = FoodTruckInfo.objects.all()
 
+    if n > len(all_trucks):
+        n == len(all_trucks)
+
     for truck in all_trucks:
         x_squared = pow(truck.longitude - longi,2)
         y_squared = pow(truck.latitude - lati,2)
