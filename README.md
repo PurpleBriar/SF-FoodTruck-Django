@@ -16,7 +16,10 @@ The application was developed to include a GUI-based web interface and an open a
 ### Requirements
 Python 3.7.4
 ### Installation
-Clone this repository and in the top level directory, create a virtual environment, then run the command *pip install requirements.txt* to install the needed software components. The list of components includes several items not needed specifically for this app because I did not develop it in a virtual environment.
+- Clone this repository
+- Navigat to the *food_truck_locator* directory
+- Create a virtual environment
+- At the command line, run the command *pip install requirements.txt* to install the needed software components. The list of components includes several items not needed specifically for this app because I did not develop it in a virtual environment.
 ### Running the app
 To run the app locally, navigate to the top level directory of the project and type the command: *python manage.py runserver*. The path to the development server will show up at the prompt. Open a web browser and type in the path in the search bar. This should take you to the app home page, which lists all active food trucks alongside a couple of searchboxes.
 ### Finding a food truck
