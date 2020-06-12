@@ -83,7 +83,8 @@ WSGI_APPLICATION = 'food_truck_locator.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
+        # Keeping sqlite db for unit testing
+        # 'ENGINE': 'django.db.backends.sqlite3',   
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'da2r06kqvha8ks',
