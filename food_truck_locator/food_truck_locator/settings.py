@@ -20,9 +20,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# For local runs uncomment the SECRET_KEY value assignment in line 24 and comment out line 29
 SECRET_KEY = '(0m36k*fbwkmlxs(gozp=7r3i$ez&dg5i38_$-q6(6)ct7a57e'
+# For web deployments, comment out line 24 and uncomment line 28 to create an environment variable 
+# and assigned the key value to it, as shown in the example below
+# The environment variable SF_FT_KEY='(0m36k*fbwkmlxs(gozp=7r3i$ez&dg5i38_$-q6(6)ct7a57e'
+# has been assigned to the SECRET_KEY variable
+# SECRET_KEY = os.environ.get('SF_FT_KEY') 
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on in production! Set to False before deploying
 DEBUG = True
 
 ALLOWED_HOSTS = []
