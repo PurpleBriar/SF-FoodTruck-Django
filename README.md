@@ -26,4 +26,4 @@ A JSON response listing the five nearest food trucks to any location can be foun
 ### Try out the app without installing it
 This app has been deployed using Heroku and can be accessed at: 
 - *https://sf-ft-nudoyen.herokuapp.com/* (GUI interface)
-- *https://sf-ft-nudoyen.herokuapp.com/api/latitude/longitude/number_of_results_to_return* (API)
+- *https://sf-ft-nudoyen.herokuapp.com/api/latitude/longitude/number_of_results_to_return* (API) eg., *https://sf-ft-nudoyen.herokuapp.com/api/37.780/-122.41/6*
