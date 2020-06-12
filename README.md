@@ -1,7 +1,7 @@
 # SF-FoodTruck-Django
 
 ## Overview
-This project is a sample food truck locator for the city of San Francisco. It allows a user to insert coordinates (latitude and longitude) within a limited range of San Francisco and returns a list of the five nearest active food trucks. The active food trucks are loaded from a publicly available spreadsheet, which contains information about each food truck (name, type of food, coordinates, etc.). Only a small subset of the publicly available information on each truck is actually used.
+This project is an example of a food truck locator for the city of San Francisco. It allows a user to insert coordinates (latitude and longitude) within a limited range of San Francisco and returns a list of the five nearest active food trucks. The active food trucks are loaded from a publicly available spreadsheet, which contains information about each food truck (name, type of food, coordinates, etc.). Only a small subset of the publicly available information on each truck is actually used.
 
 ## Implementation
 The food truck locator was developed with the following tools/frameworks:
